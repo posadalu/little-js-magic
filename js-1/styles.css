@@ -1,0 +1,32 @@
+*{
+    /*box-sizing basically makes margin and padding the lenght and width, then you can set the margin and padding to zero to start fresh*/
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;;
+}
+
+.emoji {
+    font-size: 10rem;
+    cursor: pointer;
+    /* if a selector highlights over the item when you go over it, this gets rid of it*/
+    user-select:none;
+}
+
+.closed {
+    display: none;
+}
+
+.open {
+    display: none;
+}
+
+.active {
+    display: block;
+}
